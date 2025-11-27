@@ -344,6 +344,100 @@
           </div>
         </div>
       </section>
+
+      <!-- Game Reservation section -->
+      <section id="reserve-game" class="container section">
+        <div class="row justify-content-center">
+          <div class="col-12 text-center">
+            <h2 class="display-6">Reserve a game</h2>
+          </div>
+          <div class="col-12 col-lg-8">
+            <p>
+              Reserve a board game for your next visit to Boardwalk Games. Pick
+              your challenge, and let the adventure begin! Fill out your details
+              and preferred game below, and we'll have it set aside for you when
+              you arrive.
+            </p>
+            <form action="success.html" method="GET">
+              <div class="row">
+                <div class="col-12 col-md-4 mb-3">
+                  <label for="fullName" class="form-label">Full name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="fullName"
+                    name="full_name"
+                    required
+                  />
+                </div>
+                <div class="col-12 col-md-4 mb-3">
+                  <label for="phoneNumber" class="form-label"
+                    >Phone number</label
+                  >
+                  <input
+                    type="tel"
+                    class="form-control"
+                    id="phoneNumber"
+                    name="phone_number"
+                    required
+                  />
+                </div>
+                <div class="col-12 col-md-4 mb-3">
+                  <label for="emailAddress" class="form-label"
+                    >Email address</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="emailAddress"
+                    name="email_address"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12 col-md-6 mb-3">
+                  <label for="gameSelect" class="form-label">Select game</label>
+                  <select
+                    class="form-select"
+                    id="gameSelect"
+                    name="game"
+                    required
+                  >
+                    <option value="" selected>Select game</option>
+                    <option value="galaxy-pioneers">Galaxy Pioneers</option>
+                    <option value="mystic-woods">Mystic Woods</option>
+                    <option value="captains-gambit">Captain's Gambit</option>
+                    <option value="critter-quest">Critter Quest</option>
+                    <option value="settlers-of-catan">Settlers of Catan</option>
+                    <option value="monopoly">Monopoly</option>
+                    <option value="exploding-kittens">Exploding Kittens</option>
+                    <option value="cluedo">Cluedo</option>
+                  </select>
+                </div>
+                <div class="col-12 col-md-6 mb-3">
+                  <label for="requestedDate" class="form-label"
+                    >Requested date</label
+                  >
+                  <input
+                    type="date"
+                    class="form-control"
+                    id="requestedDate"
+                    name="requested_date"
+                  />
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12 text-end">
+                  <button type="submit" class="btn custom-button-outline">
+                    Submit
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
     </main>
 
     <!-- footer / contact section -->
